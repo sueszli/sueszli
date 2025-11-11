@@ -1,27 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 40" shape-rendering="crispEdges">
-    <!-- s -->
-    <rect x="10" y="10" width="20" height="10"/>
-    <rect x="10" y="20" width="10" height="20"/>
-    <rect x="0" y="30" width="20" height="10"/>
-    <!-- u -->
-    <rect x="40" y="10" width="10" height="20"/>
-    <rect x="60" y="10" width="10" height="20"/>
-    <rect x="40" y="30" width="30" height="10"/>
-    <!-- e -->
-    <rect x="80" y="10" width="10" height="30"/>
-    <rect x="90" y="30" width="20" height="10"/>
-    <rect x="90" y="10" width="10" height="30"/>
-    <!-- s -->
-    <rect x="130" y="10" width="20" height="10"/>
-    <rect x="130" y="20" width="10" height="20"/>
-    <rect x="120" y="30" width="20" height="10"/>
-    <!-- z -->
-    <rect x="160" y="10" width="20" height="10"/>
-    <rect x="170" y="20" width="10" height="20"/>
-    <rect x="170" y="30" width="20" height="10"/>
-    <!-- l -->
-    <rect x="200" y="0" width="10" height="40"/>
-    <!-- i -->
-    <rect x="220" y="0" width="10" height="10"/>
-    <rect x="220" y="20" width="10" height="20"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 232 42" shape-rendering="crispEdges">
+    <defs>
+        <filter id="word-border">
+            <feMorphology in="SourceAlpha" operator="dilate" radius="0.1" result="border"/>
+            <feFlood flood-color="#fff"/>
+            <feComposite operator="in" in2="border"/>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <g filter="url(#word-border)">
+        <!-- s -->
+        <rect x="10" y="10" width="20" height="10"/>
+        <rect x="10" y="20" width="10" height="20"/>
+        <rect x="0" y="30" width="20" height="10"/>
+        <!-- u -->
+        <rect x="40" y="10" width="10" height="20"/>
+        <rect x="60" y="10" width="10" height="20"/>
+        <rect x="40" y="30" width="30" height="10"/>
+        <!-- e -->
+        <rect x="80" y="10" width="10" height="30"/>
+        <rect x="90" y="30" width="20" height="10"/>
+        <rect x="90" y="10" width="10" height="30"/>
+        <!-- s -->
+        <rect x="130" y="10" width="20" height="10"/>
+        <rect x="130" y="20" width="10" height="20"/>
+        <rect x="120" y="30" width="20" height="10"/>
+        <!-- z -->
+        <rect x="160" y="10" width="20" height="10"/>
+        <rect x="170" y="20" width="10" height="20"/>
+        <rect x="170" y="30" width="20" height="10"/>
+        <!-- l -->
+        <rect x="200" y="0" width="10" height="40"/>
+        <!-- i -->
+        <rect x="220" y="0" width="10" height="10"/>
+        <rect x="220" y="20" width="10" height="20"/>
+    </g>
 </svg>
